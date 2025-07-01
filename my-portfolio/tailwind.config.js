@@ -1,6 +1,12 @@
 /** @type {import('tailwindcss').Config} */
+import tailwindScrollbar from "tailwind-scrollbar";
+
 export default {
-  content: ["./pages/**/*.{html,js}", "./components/**/*.{html,js}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    // "./components/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -8,5 +14,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [tailwindScrollbar],
 };
